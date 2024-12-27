@@ -1,1 +1,1 @@
-Repository contains all examples and notes for the Github Action testing
+Repository contains all examples and notes for the Github action testing
