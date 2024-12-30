@@ -3,7 +3,7 @@ on:
   push:
 
 jobs:
-  echo: ubuntu-echo
+  ubuntu-echo:
     runs-on: ubuntu-latest
     steps:
       - name: Show OS
@@ -12,14 +12,14 @@ jobs:
           echo "Runner OS: $Runner_OS"
 
 jobs:
-  echo: macos-echo
+  macos-echo:
     runs-on: macos-latest
     steps:
       - name: Show OS
         run: echo "This job is running on a MacOS runner."
 
 jobs:
-  echo: windows-echo
+ windows-echo:
     runs-on: windows-latest
     steps:
       - name: Show OS
