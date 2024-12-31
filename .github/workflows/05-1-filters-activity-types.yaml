@@ -1,7 +1,9 @@
 name: 05 - 1 - Event Filters and Activity Type
   on: 
     pull_request:
-      types: [opened, synchronize]
+      types: 
+        - opened
+        - synchronize
       branches:
         - main
   
