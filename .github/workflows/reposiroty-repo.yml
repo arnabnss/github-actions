@@ -1,0 +1,15 @@
+name: Deploy to Production
+on:
+  workflow_dispatch:
+
+  repository_dispatch:
+    types: [Trigger_Prod_Deploy]
+        
+
+jobs:
+  deploy_prod:
+    runs-on: [self-hosted, prod, utp]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
