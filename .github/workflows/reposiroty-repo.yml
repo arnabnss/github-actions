@@ -1,15 +1,14 @@
-name: Deploy to Production
-on:
-  workflow_dispatch:
+name: Handle Event
 
+on:
   repository_dispatch:
-    types: [Trigger_Prod_Deploy]
-        
+    types:
+      - my_custom_event  # Listens for the custom event type
 
 jobs:
-  deploy_prod:
-    runs-on: [self-hosted, prod, utp]
+  handle_event:
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - name: Log Event
+        run: echo "Custom event 'my_custom_event' received!"
