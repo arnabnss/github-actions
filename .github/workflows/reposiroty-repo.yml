@@ -2,8 +2,7 @@ name: Handle Event
 
 on:
   repository_dispatch:
-    types:
-      - my_custom_event  # Listens for the custom event type
+      - my_custom_event
 
 jobs:
   handle_event:
