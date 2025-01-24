@@ -3,7 +3,7 @@ name: Handle Event
 on:
   repository_dispatch:
     types:
-      - my_custom_events
+      - my_custom_event
 
 jobs:
   handle_event:
